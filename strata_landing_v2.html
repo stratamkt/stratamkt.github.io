@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strata — Consultoria Estratégica</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green:  #1A3D2B;
+    --gmid:   #2D6B47;
+    --glight: #7DB896;
+    --black:  #0A0A0A;
+    --white:  #FAFAFA;
+    --sand:   #F2EDE4;
+    --sand2:  #E8E0D4;
+    --gray:   #6B7280;
+    --border: #D9D3C9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--sand);
+    color: var(--black);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--green);
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 28px 40px;
+    position: relative; overflow: hidden;
+  }
+
+  .hero-bg-text {
+    position: absolute;
+    bottom: -20px; right: -16px;
+    font-family: 'Playfair Display', serif;
+    font-size: 140px; font-weight: 900;
+    color: rgba(255,255,255,0.04);
+    letter-spacing: -4px; line-height: 1;
+    pointer-events: none; user-select: none;
+  }
+
+  .hero-lines {
+    position: absolute; top: 0; right: 0;
+    display: flex; flex-direction: column; gap: 5px;
+    padding: 28px 28px 0 0; opacity: 0.12;
+  }
+  .hero-line { height: 2px; background: var(--white); }
+
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+  }
+
+  .hero-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+  }
+
+  .hero-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--glight);
+    border: 1px solid rgba(125,184,150,0.3);
+    padding: 6px 12px;
+  }
+
+  .hero-middle { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 48px 0 32px; }
+
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--glight);
+    margin-bottom: 20px;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px; font-weight: 900;
+    color: var(--white); line-height: 0.9;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+  }
+
+  .hero-divider {
+    width: 48px; height: 2px;
+    background: var(--glight);
+    margin-bottom: 24px;
+  }
+
+  .hero-tagline {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-style: italic;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.4; max-width: 280px;
+  }
+
+  .hero-bottom {}
+
+  .hero-scroll {
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .hero-scroll-line {
+    width: 32px; height: 1px;
+    background: rgba(255,255,255,0.25);
+  }
+
+  .hero-scroll-text {
+    font-size: 11px; letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ── MANIFESTO ── */
+  .manifesto {
+    background: var(--black);
+    padding: 56px 28px;
+    position: relative; overflow: hidden;
+  }
+
+  .manifesto::before {
+    content: '"';
+    position: absolute; top: -20px; left: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 200px; font-weight: 900;
+    color: rgba(255,255,255,0.03);
+    line-height: 1; pointer-events: none;
+  }
+
+  .manifesto-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--glight);
+    margin-bottom: 28px;
+  }
+
+  .manifesto-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px; font-weight: 700;
+    color: var(--white); line-height: 1.35;
+    margin-bottom: 32px;
+  }
+
+  .manifesto-text em {
+    font-style: italic; color: var(--glight);
+  }
+
+  .manifesto-sub {
+    font-size: 15px; line-height: 1.8;
+    color: rgba(255,255,255,0.5);
+    border-left: 2px solid var(--gmid);
+    padding-left: 16px;
+  }
+
+  /* ── PROBLEMA ── */
+  .problema {
+    background: var(--sand);
+    padding: 56px 28px;
+  }
+
+  .section-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gmid);
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px; font-weight: 900;
+    color: var(--black); line-height: 1.15;
+    margin-bottom: 32px;
+  }
+
+  .prob-list {
+    list-style: none;
+    display: flex; flex-direction: column; gap: 0;
+  }
+
+  .prob-item {
+    display: flex; gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+
+  .prob-item:first-child { border-top: 1px solid var(--border); }
+
+  .prob-dash {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px; color: var(--gmid);
+    flex-shrink: 0; margin-top: 2px;
+  }
+
+  .prob-text {
+    font-size: 15px; line-height: 1.6;
+    color: var(--gray);
+  }
+
+  /* ── TRANSFORMAÇÃO ── */
+  .transform {
+    background: var(--green);
+    padding: 56px 28px;
+    position: relative; overflow: hidden;
+  }
+
+  .transform::after {
+    content: '→';
+    position: absolute; bottom: -30px; right: 20px;
+    font-size: 160px; font-weight: 900;
+    color: rgba(255,255,255,0.04);
+    pointer-events: none;
+  }
+
+  .transform-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--glight);
+    margin-bottom: 28px;
+  }
+
+  .before-after {
+    display: flex; flex-direction: column; gap: 2px;
+  }
+
+  .ba-row {
+    display: grid; grid-template-columns: 1fr 40px 1fr;
+    align-items: center; gap: 0;
+  }
+
+  .ba-before {
+    background: rgba(0,0,0,0.3);
+    padding: 14px 16px;
+    font-size: 13px; color: rgba(255,255,255,0.5);
+    line-height: 1.4;
+  }
+
+  .ba-arrow {
+    background: rgba(0,0,0,0.2);
+    display: flex; align-items: center; justify-content: center;
+    height: 100%;
+    font-size: 14px; color: var(--glight);
+  }
+
+  .ba-after {
+    background: rgba(255,255,255,0.08);
+    padding: 14px 16px;
+    font-size: 13px; font-weight: 500;
+    color: var(--white); line-height: 1.4;
+  }
+
+  /* ── MÉTODO ── */
+  .metodo {
+    background: var(--black);
+    padding: 56px 28px;
+  }
+
+  .metodo-header {
+    margin-bottom: 36px;
+  }
+
+  .pillar-stack {
+    display: flex; flex-direction: column; gap: 2px;
+  }
+
+  .pillar {
+    display: grid; grid-template-columns: 48px 1fr;
+    background: rgba(255,255,255,0.04);
+    transition: background 0.2s;
+    cursor: default;
+  }
+
+  .pillar:hover { background: rgba(255,255,255,0.07); }
+
+  .pillar-num {
+    display: flex; align-items: center; justify-content: center;
+    background: var(--green);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; color: var(--glight);
+    padding: 20px 0;
+  }
+
+  .pillar-content {
+    padding: 18px 20px;
+  }
+
+  .pillar-name {
+    font-size: 15px; font-weight: 500;
+    color: var(--white); margin-bottom: 4px;
+  }
+
+  .pillar-desc {
+    font-size: 12px; color: rgba(255,255,255,0.4);
+    line-height: 1.5;
+  }
+
+  /* ── STATS ── */
+  .stats-section {
+    background: var(--sand2);
+    padding: 0;
+  }
+
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat-box {
+    padding: 36px 16px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+    position: relative;
+  }
+
+  .stat-box:last-child { border-right: none; }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; font-weight: 900;
+    color: var(--green); line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gray); line-height: 1.5;
+  }
+
+  /* ── PARA QUEM ── */
+  .para-quem {
+    background: var(--white);
+    padding: 56px 28px;
+  }
+
+  .check-grid {
+    display: flex; flex-direction: column; gap: 0;
+    margin-top: 32px;
+  }
+
+  .check-row {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 18px 0; border-bottom: 1px solid var(--border);
+  }
+
+  .check-row:first-child { border-top: 1px solid var(--border); }
+
+  .check-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--green); flex-shrink: 0;
+    margin-top: 6px;
+  }
+
+  .check-text {
+    font-size: 15px; line-height: 1.65;
+    color: var(--gray);
+  }
+
+  /* ── QUOTE GRANDE ── */
+  .big-quote {
+    background: var(--green);
+    padding: 64px 28px;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+
+  .big-quote-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-style: italic; font-weight: 700;
+    color: var(--white); line-height: 1.35;
+    margin-bottom: 24px;
+    position: relative; z-index: 1;
+  }
+
+  .big-quote-line {
+    width: 40px; height: 2px;
+    background: var(--glight);
+    margin: 0 auto 16px;
+  }
+
+  .big-quote-author {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ── FORM ── */
+  .form-section {
+    background: var(--sand);
+    padding: 56px 28px 72px;
+  }
+
+  .form-intro {
+    margin-bottom: 36px;
+  }
+
+  .form-intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px; font-weight: 900;
+    color: var(--black); line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .form-intro-title em {
+    font-style: italic; color: var(--green);
+  }
+
+  .form-intro-sub {
+    font-size: 15px; line-height: 1.8;
+    color: var(--gray);
+  }
+
+  .form-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 32px 24px;
+  }
+
+  .form-group { margin-bottom: 22px; }
+
+  .form-group label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gray); margin-bottom: 10px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%; padding: 15px 16px;
+    border: 1px solid var(--border);
+    background: var(--sand);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px; color: var(--black);
+    outline: none; -webkit-appearance: none;
+    border-radius: 0; transition: border-color 0.2s;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--green); background: var(--white); }
+
+  .form-group textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
+
+  .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%236B7280' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-color: var(--sand);
+    padding-right: 40px;
+  }
+
+  .form-submit {
+    width: 100%; padding: 20px;
+    background: var(--green); color: var(--white);
+    border: none; cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    transition: background 0.2s; margin-top: 8px;
+  }
+
+  .form-submit:active { background: var(--gmid); }
+
+  .form-promise {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-top: 20px;
+  }
+
+  .promise-item {
+    display: flex; gap: 10px; align-items: center;
+    font-size: 12px; color: var(--gray);
+  }
+
+  .promise-dot {
+    width: 4px; height: 4px; border-radius: 50%;
+    background: var(--gmid); flex-shrink: 0;
+  }
+
+  .success-msg {
+    display: none; padding: 20px;
+    background: #E8F0EB;
+    border-left: 3px solid var(--green);
+    margin-top: 20px;
+  }
+
+  .success-msg.visible { display: block; }
+
+  .success-msg p {
+    font-size: 14px; color: var(--green);
+    font-weight: 500; line-height: 1.6;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--black);
+    padding: 48px 28px;
+  }
+
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900;
+    color: var(--white); margin-bottom: 4px;
+  }
+
+  .footer-sub {
+    font-size: 11px; letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 32px;
+  }
+
+  .footer-divider {
+    width: 32px; height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin-bottom: 24px;
+  }
+
+  .footer-ig {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px; color: var(--glight);
+    text-decoration: none; letter-spacing: 0.08em;
+  }
+
+  .footer-copy {
+    margin-top: 32px;
+    font-size: 11px; color: rgba(255,255,255,0.2);
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-lines">
+      <div class="hero-line" style="width:80px;"></div>
+      <div class="hero-line" style="width:56px;"></div>
+      <div class="hero-line" style="width:96px;"></div>
+      <div class="hero-line" style="width:40px;"></div>
+      <div class="hero-line" style="width:72px;"></div>
+    </div>
+
+    <div class="hero-top">
+      <div class="hero-badge">@strata.mkt</div>
+      <div class="hero-tag">B2B · 1:1</div>
+    </div>
+
+    <div class="hero-middle">
+      <div class="hero-eyebrow">Consultoria Estratégica</div>
+      <div class="hero-name">STRATA</div>
+      <div class="hero-divider"></div>
+      <div class="hero-tagline">Clareza estratégica para crescimento previsível.</div>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="hero-scroll">
+        <div class="hero-scroll-line"></div>
+        <div class="hero-scroll-text">Role para conhecer</div>
+      </div>
+    </div>
+
+    <div class="hero-bg-text">S</div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto">
+    <div class="manifesto-label">O problema</div>
+    <div class="manifesto-text">
+      A maioria das empresas B2B cresce <em>apesar</em> da estratégia, não por causa dela.
+    </div>
+    <div class="manifesto-sub">
+      Quando marketing e receita vivem em mundos separados, o crescimento fica refém de esforço, sorte e pessoas-chave. A Strata existe para mudar isso.
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problema">
+    <div class="section-eyebrow">Você se reconhece aqui?</div>
+    <div class="section-title">Sinais de que sua empresa precisa de clareza estratégica</div>
+    <ul class="prob-list">
+      <li class="prob-item">
+        <span class="prob-dash">—</span>
+        <span class="prob-text">Marketing executado sem direção estratégica clara</span>
+      </li>
+      <li class="prob-item">
+        <span class="prob-dash">—</span>
+        <span class="prob-text">Demanda que depende de indicação ou do fundador</span>
+      </li>
+      <li class="prob-item">
+        <span class="prob-dash">—</span>
+        <span class="prob-text">Pipeline inconsistente, sem previsibilidade</span>
+      </li>
+      <li class="prob-item">
+        <span class="prob-dash">—</span>
+        <span class="prob-text">Decisões tomadas no achismo, não em dados</span>
+      </li>
+      <li class="prob-item">
+        <span class="prob-dash">—</span>
+        <span class="prob-text">Crescimento que não escala porque não tem base</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- TRANSFORMAÇÃO -->
+  <section class="transform">
+    <div class="transform-label">A transformação</div>
+    <div class="before-after">
+      <div class="ba-row">
+        <div class="ba-before">Crescimento improvisado</div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-after">Estrutura previsível</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-before">Marketing sem direção</div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-after">Demanda estruturada</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-before">Decisões no achismo</div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-after">Clareza estratégica</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-before">Pipeline inconsistente</div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-after">Receita conectada</div>
+      </div>
+      <div class="ba-row">
+        <div class="ba-before">Esforço heróico</div>
+        <div class="ba-arrow">→</div>
+        <div class="ba-after">Crescimento sustentável</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Semanas de consultoria</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Pilares integrados</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">1:1</div>
+        <div class="stat-label">Individual e dedicado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÉTODO -->
+  <section class="metodo">
+    <div class="metodo-header">
+      <div class="section-eyebrow" style="color:var(--glight);">A metodologia</div>
+      <div class="section-title" style="color:var(--white); font-size:26px;">Cinco pilares construídos em sequência. Cada camada sustenta a próxima.</div>
+    </div>
+    <div class="pillar-stack">
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <div class="pillar-content">
+          <div class="pillar-name">Direção Estratégica</div>
+          <div class="pillar-desc">ICP, proposta de valor e posicionamento definidos com clareza</div>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <div class="pillar-content">
+          <div class="pillar-name">Arquitetura de Demanda</div>
+          <div class="pillar-desc">Canais prioritários e sistema de geração de oportunidades</div>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <div class="pillar-content">
+          <div class="pillar-name">Arquitetura de Receita</div>
+          <div class="pillar-desc">Pipeline, conversão e integração entre marketing e vendas</div>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">04</div>
+        <div class="pillar-content">
+          <div class="pillar-name">Controle & Performance</div>
+          <div class="pillar-desc">KPIs estratégicos e decisões orientadas por dados reais</div>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">05</div>
+        <div class="pillar-content">
+          <div class="pillar-name">Planejamento & Escala</div>
+          <div class="pillar-desc">Roadmap de 90 dias e estrutura de crescimento sustentável</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="para-quem">
+    <div class="section-eyebrow">Para quem é</div>
+    <div class="section-title">A Strata foi construída para empresas B2B que já têm produto validado e querem crescer com estrutura.</div>
+    <div class="check-grid">
+      <div class="check-row">
+        <div class="check-dot"></div>
+        <div class="check-text">Negócios onde marketing e receita ainda não conversam</div>
+      </div>
+      <div class="check-row">
+        <div class="check-dot"></div>
+        <div class="check-text">Fundadores que tomam decisões no achismo por falta de clareza estratégica</div>
+      </div>
+      <div class="check-row">
+        <div class="check-dot"></div>
+        <div class="check-text">Empresas que crescem por esforço heróico e querem construir previsibilidade</div>
+      </div>
+      <div class="check-row">
+        <div class="check-dot"></div>
+        <div class="check-text">Líderes que sentem que estão sempre ocupados mas o crescimento não acompanha</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="big-quote">
+    <div class="big-quote-text">"A base que sustenta tudo que cresce acima."</div>
+    <div class="big-quote-line"></div>
+    <div class="big-quote-author">Strata — Consultoria Estratégica</div>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section" id="proposta">
+    <div class="form-intro">
+      <div class="section-eyebrow">Próximo passo</div>
+      <div class="form-intro-title">Pronto para construir uma base <em>sólida?</em></div>
+      <div class="form-intro-sub">Preencha com cuidado — quanto mais contexto você trouxer, mais estratégica será nossa análise inicial.</div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-group">
+        <label>Nome completo</label>
+        <input type="text" id="nome" placeholder="Seu nome" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label>Empresa</label>
+        <input type="text" id="empresa" placeholder="Nome da empresa">
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" id="email" placeholder="seu@empresa.com" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label>Tamanho da empresa</label>
+        <select id="tamanho">
+          <option value="">Selecione</option>
+          <option>1–10 colaboradores</option>
+          <option>11–50 colaboradores</option>
+          <option>51–200 colaboradores</option>
+          <option>200+ colaboradores</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Principal desafio hoje</label>
+        <textarea id="desafio" placeholder="Qual é o maior gargalo de crescimento da sua empresa hoje?"></textarea>
+      </div>
+
+      <button class="form-submit" onclick="enviar()">Solicitar proposta →</button>
+
+      <div class="success-msg" id="successMsg">
+        <p>Solicitação recebida. Entraremos em contato em até 48h úteis.</p>
+      </div>
+
+      <div class="form-promise">
+        <div class="promise-item"><div class="promise-dot"></div>Sem compromisso até você decidir avançar</div>
+        <div class="promise-item"><div class="promise-dot"></div>Diagnóstico inicial sem custo</div>
+        <div class="promise-item"><div class="promise-dot"></div>Resposta em até 48h úteis</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">Strata</div>
+    <div class="footer-sub">Consultoria Estratégica · B2B</div>
+    <div class="footer-divider"></div>
+    <a href="https://instagram.com/strata.mkt" class="footer-ig">@strata.mkt</a>
+    <div class="footer-copy">© 2025 Strata. Todos os direitos reservados.</div>
+  </footer>
+
+<script>
+function enviar() {
+  const campos = ['nome','empresa','email','desafio'];
+  const valores = campos.map(id => document.getElementById(id).value.trim());
+  if (valores.some(v => !v) || !document.getElementById('tamanho').value) {
+    alert('Por favor, preencha todos os campos antes de enviar.');
+    return;
+  }
+  document.getElementById('successMsg').classList.add('visible');
+  document.querySelector('.form-submit').disabled = true;
+  document.querySelector('.form-submit').style.opacity = '0.5';
+}
+</script>
+
+</body>
+</html>
