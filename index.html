@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -751,22 +752,22 @@
       <div class="form-intro-sub">Preencha com cuidado — quanto mais contexto você trouxer, mais estratégica será nossa análise inicial.</div>
     </div>
 
-    <div class="form-card">
+    <form class="form-card" action="https://formspree.io/f/xdajjdoe" method="POST">
       <div class="form-group">
         <label>Nome completo</label>
-        <input type="text" id="nome" placeholder="Seu nome" autocomplete="name">
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name">
       </div>
       <div class="form-group">
         <label>Empresa</label>
-        <input type="text" id="empresa" placeholder="Nome da empresa">
+        <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa">
       </div>
       <div class="form-group">
         <label>E-mail</label>
-        <input type="email" id="email" placeholder="seu@empresa.com" autocomplete="email">
+        <input type="email" id="email" name="_replyto" placeholder="seu@empresa.com" autocomplete="email">
       </div>
       <div class="form-group">
         <label>Tamanho da empresa</label>
-        <select id="tamanho">
+        <select id="tamanho" name="tamanho">
           <option value="">Selecione</option>
           <option>1–10 colaboradores</option>
           <option>11–50 colaboradores</option>
@@ -776,15 +777,16 @@
       </div>
       <div class="form-group">
         <label>Principal desafio hoje</label>
-        <textarea id="desafio" placeholder="Qual é o maior gargalo de crescimento da sua empresa hoje?"></textarea>
+        <textarea id="desafio" name="desafio" placeholder="Qual é o maior gargalo de crescimento da sua empresa hoje?"></textarea>
       </div>
 
-      <button class="form-submit" onclick="enviar()">Solicitar proposta →</button>
+      <button type="submit" class="form-submit">Solicitar proposta →</button>
 
       <div class="success-msg" id="successMsg">
         <p>Solicitação recebida. Entraremos em contato em até 48h úteis.</p>
       </div>
 
+      </form>
       <div class="form-promise">
         <div class="promise-item"><div class="promise-dot"></div>Sem compromisso até você decidir avançar</div>
         <div class="promise-item"><div class="promise-dot"></div>Diagnóstico inicial sem custo</div>
@@ -802,19 +804,7 @@
     <div class="footer-copy">© 2025 Strata. Todos os direitos reservados.</div>
   </footer>
 
-<script>
-function enviar() {
-  const campos = ['nome','empresa','email','desafio'];
-  const valores = campos.map(id => document.getElementById(id).value.trim());
-  if (valores.some(v => !v) || !document.getElementById('tamanho').value) {
-    alert('Por favor, preencha todos os campos antes de enviar.');
-    return;
-  }
-  document.getElementById('successMsg').classList.add('visible');
-  document.querySelector('.form-submit').disabled = true;
-  document.querySelector('.form-submit').style.opacity = '0.5';
-}
-</script>
+
 
 </body>
 </html>
