@@ -543,6 +543,92 @@
     margin-top: 32px;
     font-size: 11px; color: rgba(255,255,255,0.2);
   }
+
+  /* ── SOBRE ─────────────────────────────────────── */
+  .sobre {
+    background: var(--black);
+    padding: 100px 0;
+  }
+  .sobre-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .sobre-headline {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 44px);
+    color: var(--white);
+    line-height: 1.25;
+    margin: 16px 0 28px;
+  }
+  .sobre-headline em {
+    color: var(--glight);
+    font-style: italic;
+  }
+  .sobre-body {
+    font-size: 17px;
+    color: rgba(250,250,250,0.65);
+    line-height: 1.8;
+    max-width: 720px;
+    margin-bottom: 56px;
+  }
+  .sobre-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 640px) {
+    .sobre-cards { grid-template-columns: 1fr; }
+  }
+  .sobre-card {
+    border: 1px solid rgba(125,184,150,0.25);
+    border-radius: 8px;
+    padding: 28px;
+    background: rgba(45,107,71,0.08);
+  }
+  .sobre-card-title {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--glight);
+    margin-bottom: 14px;
+  }
+  .sobre-card-logos {
+    font-size: 15px;
+    color: rgba(250,250,250,0.8);
+    line-height: 1.9;
+  }
+  .sobre-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 640px) {
+    .sobre-pillars { grid-template-columns: 1fr; }
+  }
+  .sobre-pillar {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px;
+    border-left: 2px solid var(--green);
+    background: rgba(26,61,43,0.3);
+    border-radius: 0 6px 6px 0;
+  }
+  .sobre-pillar-icon {
+    color: var(--glight);
+    font-size: 10px;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+  .sobre-pillar-text {
+    font-size: 15px;
+    color: rgba(250,250,250,0.75);
+    line-height: 1.6;
+  }
+
 </style>
 </head>
 <body>
@@ -570,10 +656,7 @@
     </div>
 
     <div class="hero-bottom">
-      <div class="hero-scroll">
-        <div class="hero-scroll-line"></div>
-        <div class="hero-scroll-text">Role para conhecer</div>
-      </div>
+
     </div>
 
     <div class="hero-bg-text">S</div>
@@ -587,6 +670,50 @@
     </div>
     <div class="manifesto-sub">
       Quando marketing e receita vivem em mundos separados, o crescimento fica refém de esforço, sorte e pessoas-chave. A Strata existe para mudar isso.
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-inner">
+      <div class="section-eyebrow">Quem está por trás da Strata</div>
+      <div class="sobre-headline">15 anos. 5 multinacionais.<br><em>Um padrão que se repetia em todo lugar.</em></div>
+      <div class="sobre-body">
+        Profissional de marketing com 15 anos de experiência em empresas multinacionais dos setores de varejo, beleza, bens de consumo, farmacêutico e agronegócio. Especialista em construir posicionamento e estratégias de marketing para grandes empresas — com foco em marketing digital, go-to-market e growth.
+      </div>
+
+      <div class="sobre-cards">
+        <div class="sobre-card">
+          <div class="sobre-card-title">Experiência em</div>
+          <div class="sobre-card-logos">
+            RedCloud Technology&ensp;·&ensp;Alcon&ensp;·&ensp;Estée Lauder<br>
+            Pernod Ricard&ensp;·&ensp;EssilorLuxottica&ensp;·&ensp;Monsanto
+          </div>
+        </div>
+        <div class="sobre-card">
+          <div class="sobre-card-title">Marcas geridas</div>
+          <div class="sobre-card-logos">
+            Beefeater&ensp;·&ensp;Prada&ensp;·&ensp;Giorgio Armani&ensp;·&ensp;Bulgari<br>
+            Tom Ford&ensp;·&ensp;Smashbox&ensp;·&ensp;entre outras 20+
+          </div>
+        </div>
+      </div>
+
+      <div class="sobre-pillars">
+        <div class="sobre-pillar">
+          <div class="sobre-pillar-icon">◆</div>
+          <div class="sobre-pillar-text">Gestão de portfólio de marcas com crescimento anual sustentável</div>
+        </div>
+        <div class="sobre-pillar">
+          <div class="sobre-pillar-icon">◆</div>
+          <div class="sobre-pillar-text">Desenvolvimento de estratégia multicanal</div>
+        </div>
+        <div class="sobre-pillar">
+          <div class="sobre-pillar-icon">◆</div>
+          <div class="sobre-pillar-text">Digitalização de marcas e aceleração de presença digital</div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -743,6 +870,7 @@
     <div class="big-quote-line"></div>
     <div class="big-quote-author">Strata — Consultoria Estratégica</div>
   </section>
+
 
   <!-- FORM -->
   <section class="form-section" id="proposta">
