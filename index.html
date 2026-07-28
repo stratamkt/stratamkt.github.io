@@ -1,13 +1,24 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strata — Consultoria Estratégica de Marketing | Interior de SP</title>
+<meta name="description" content="Consultoria estratégica 1:1 para negócios que investem em marketing e ainda não sabem o que traz cliente. Comece pelo Diagnóstico: 1 mês, 4 encontros, direção definida.">
+<meta property="og:title" content="Strata — Consultoria Estratégica de Marketing">
+<meta property="og:description" content="Marketing sem direção vira improviso. Comece pelo Diagnóstico: em 1 mês você sai sabendo para quem vende, o que te diferencia e onde investir.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stratamkt.github.io">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231A3D2B'/><text x='50' y='72' font-family='Georgia,serif' font-size='68' font-weight='700' fill='%23F1ECE6' text-anchor='middle'>S</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
 <!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
@@ -18,1022 +29,405 @@ fbq('init', '3681251952013117');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=3681251952013117&ev=PageView&noscript=1"
-/></noscript>
+src="https://www.facebook.com/tr?id=3681251952013117&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Strata — Consultoria Estratégica</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <style>
-  :root {
-    --green:  #1A3D2B;
-    --gmid:   #2D6B47;
-    --glight: #7DB896;
-    --black:  #0A0A0A;
-    --white:  #FAFAFA;
-    --sand:   #F2EDE4;
-    --sand2:  #E8E0D4;
-    --gray:   #6B7280;
-    --border: #D9D3C9;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--sand);
-    color: var(--black);
-  }
-
-  /* ── HERO ── */
-  .hero {
-    background: var(--green);
-    min-height: 100vh;
-    display: flex; flex-direction: column;
-    justify-content: space-between;
-    padding: 48px 28px 40px;
-    position: relative; overflow: hidden;
-  }
-
-  .hero-bg-text {
-    position: absolute;
-    bottom: -20px; right: -16px;
-    font-family: 'Playfair Display', serif;
-    font-size: 140px; font-weight: 900;
-    color: rgba(255,255,255,0.04);
-    letter-spacing: -4px; line-height: 1;
-    pointer-events: none; user-select: none;
-  }
-
-  .hero-lines {
-    position: absolute; top: 0; right: 0;
-    display: flex; flex-direction: column; gap: 5px;
-    padding: 28px 28px 0 0; opacity: 0.12;
-  }
-  .hero-line { height: 2px; background: var(--white); }
-
-  .hero-top {
-    display: flex; justify-content: space-between; align-items: flex-start;
-  }
-
-  .hero-badge {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
-  }
-
-  .hero-tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--glight);
-    border: 1px solid rgba(125,184,150,0.3);
-    padding: 6px 12px;
-  }
-
-  .hero-middle { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 48px 0 32px; }
-
-  .hero-eyebrow {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--glight);
-    margin-bottom: 20px;
-  }
-
-  .hero-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 72px; font-weight: 900;
-    color: var(--white); line-height: 0.9;
-    letter-spacing: -1px;
-    margin-bottom: 24px;
-  }
-
-  .hero-divider {
-    width: 48px; height: 2px;
-    background: var(--glight);
-    margin-bottom: 24px;
-  }
-
-  .hero-tagline {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px; font-style: italic;
-    color: rgba(255,255,255,0.75);
-    line-height: 1.4; max-width: 280px;
-  }
-
-  .hero-bottom {}
-
-  .hero-scroll {
-    display: flex; align-items: center; gap: 12px;
-  }
-
-  .hero-scroll-line {
-    width: 32px; height: 1px;
-    background: rgba(255,255,255,0.25);
-  }
-
-  .hero-scroll-text {
-    font-size: 11px; letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
-  }
-
-  /* ── MANIFESTO ── */
-  .manifesto {
-    background: var(--black);
-    padding: 56px 28px;
-    position: relative; overflow: hidden;
-  }
-
-  .manifesto::before {
-    content: '"';
-    position: absolute; top: -20px; left: 20px;
-    font-family: 'Playfair Display', serif;
-    font-size: 200px; font-weight: 900;
-    color: rgba(255,255,255,0.03);
-    line-height: 1; pointer-events: none;
-  }
-
-  .manifesto-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--glight);
-    margin-bottom: 28px;
-  }
-
-  .manifesto-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px; font-weight: 700;
-    color: var(--white); line-height: 1.35;
-    margin-bottom: 32px;
-  }
-
-  .manifesto-text em {
-    font-style: italic; color: var(--glight);
-  }
-
-  .manifesto-sub {
-    font-size: 15px; line-height: 1.8;
-    color: rgba(255,255,255,0.5);
-    border-left: 2px solid var(--gmid);
-    padding-left: 16px;
-  }
-
-  /* ── PROBLEMA ── */
-  .problema {
-    background: var(--sand);
-    padding: 56px 28px;
-  }
-
-  .section-eyebrow {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gmid);
-    margin-bottom: 20px;
-  }
-
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 30px; font-weight: 900;
-    color: var(--black); line-height: 1.15;
-    margin-bottom: 32px;
-  }
-
-  .prob-list {
-    list-style: none;
-    display: flex; flex-direction: column; gap: 0;
-  }
-
-  .prob-item {
-    display: flex; gap: 16px;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--border);
-    align-items: flex-start;
-  }
-
-  .prob-item:first-child { border-top: 1px solid var(--border); }
-
-  .prob-dash {
-    font-family: 'DM Mono', monospace;
-    font-size: 14px; color: var(--gmid);
-    flex-shrink: 0; margin-top: 2px;
-  }
-
-  .prob-text {
-    font-size: 15px; line-height: 1.6;
-    color: var(--gray);
-  }
-
-  /* ── TRANSFORMAÇÃO ── */
-  .transform {
-    background: var(--green);
-    padding: 56px 28px;
-    position: relative; overflow: hidden;
-  }
-
-  .transform::after {
-    content: '→';
-    position: absolute; bottom: -30px; right: 20px;
-    font-size: 160px; font-weight: 900;
-    color: rgba(255,255,255,0.04);
-    pointer-events: none;
-  }
-
-  .transform-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--glight);
-    margin-bottom: 28px;
-  }
-
-  .before-after {
-    display: flex; flex-direction: column; gap: 2px;
-  }
-
-  .ba-row {
-    display: grid; grid-template-columns: 1fr 40px 1fr;
-    align-items: center; gap: 0;
-  }
-
-  .ba-before {
-    background: rgba(0,0,0,0.3);
-    padding: 14px 16px;
-    font-size: 13px; color: rgba(255,255,255,0.5);
-    line-height: 1.4;
-  }
-
-  .ba-arrow {
-    background: rgba(0,0,0,0.2);
-    display: flex; align-items: center; justify-content: center;
-    height: 100%;
-    font-size: 14px; color: var(--glight);
-  }
-
-  .ba-after {
-    background: rgba(255,255,255,0.08);
-    padding: 14px 16px;
-    font-size: 13px; font-weight: 500;
-    color: var(--white); line-height: 1.4;
-  }
-
-  /* ── MÉTODO ── */
-  .metodo {
-    background: var(--black);
-    padding: 56px 28px;
-  }
-
-  .metodo-header {
-    margin-bottom: 36px;
-  }
-
-  .pillar-stack {
-    display: flex; flex-direction: column; gap: 2px;
-  }
-
-  .pillar {
-    display: grid; grid-template-columns: 48px 1fr;
-    background: rgba(255,255,255,0.04);
-    transition: background 0.2s;
-    cursor: default;
-  }
-
-  .pillar:hover { background: rgba(255,255,255,0.07); }
-
-  .pillar-num {
-    display: flex; align-items: center; justify-content: center;
-    background: var(--green);
-    font-family: 'DM Mono', monospace;
-    font-size: 11px; color: var(--glight);
-    padding: 20px 0;
-  }
-
-  .pillar-content {
-    padding: 18px 20px;
-  }
-
-  .pillar-name {
-    font-size: 15px; font-weight: 500;
-    color: var(--white); margin-bottom: 4px;
-  }
-
-  .pillar-desc {
-    font-size: 12px; color: rgba(255,255,255,0.4);
-    line-height: 1.5;
-  }
-
-  /* ── STATS ── */
-  .stats-section {
-    background: var(--sand2);
-    padding: 0;
-  }
-
-  .stats-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
-  }
-
-  .stat-box {
-    padding: 36px 16px;
-    text-align: center;
-    border-right: 1px solid var(--border);
-    position: relative;
-  }
-
-  .stat-box:last-child { border-right: none; }
-
-  .stat-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px; font-weight: 900;
-    color: var(--green); line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .stat-label {
-    font-size: 10px; letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gray); line-height: 1.5;
-  }
-
-  /* ── PARA QUEM ── */
-  .para-quem {
-    background: var(--white);
-    padding: 56px 28px;
-  }
-
-  .check-grid {
-    display: flex; flex-direction: column; gap: 0;
-    margin-top: 32px;
-  }
-
-  .check-row {
-    display: flex; gap: 16px; align-items: flex-start;
-    padding: 18px 0; border-bottom: 1px solid var(--border);
-  }
-
-  .check-row:first-child { border-top: 1px solid var(--border); }
-
-  .check-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--green); flex-shrink: 0;
-    margin-top: 6px;
-  }
-
-  .check-text {
-    font-size: 15px; line-height: 1.65;
-    color: var(--gray);
-  }
-
-  /* ── QUOTE GRANDE ── */
-  .big-quote {
-    background: var(--green);
-    padding: 64px 28px;
-    text-align: center;
-    position: relative; overflow: hidden;
-  }
-
-  .big-quote-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px; font-style: italic; font-weight: 700;
-    color: var(--white); line-height: 1.35;
-    margin-bottom: 24px;
-    position: relative; z-index: 1;
-  }
-
-  .big-quote-line {
-    width: 40px; height: 2px;
-    background: var(--glight);
-    margin: 0 auto 16px;
-  }
-
-  .big-quote-author {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.35);
-  }
-
-  /* ── FORM ── */
-  .form-section {
-    background: var(--sand);
-    padding: 56px 28px 72px;
-  }
-
-  .form-intro {
-    margin-bottom: 36px;
-  }
-
-  .form-intro-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 34px; font-weight: 900;
-    color: var(--black); line-height: 1.1;
-    margin-bottom: 16px;
-  }
-
-  .form-intro-title em {
-    font-style: italic; color: var(--green);
-  }
-
-  .form-intro-sub {
-    font-size: 15px; line-height: 1.8;
-    color: var(--gray);
-  }
-
-  .form-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    padding: 32px 24px;
-  }
-
-  .form-group { margin-bottom: 22px; }
-
-  .form-group label {
-    display: block;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px; letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gray); margin-bottom: 10px;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%; padding: 15px 16px;
-    border: 1px solid var(--border);
-    background: var(--sand);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px; color: var(--black);
-    outline: none; -webkit-appearance: none;
-    border-radius: 0; transition: border-color 0.2s;
-  }
-
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus { border-color: var(--green); background: var(--white); }
-
-  .form-group textarea { resize: vertical; min-height: 110px; line-height: 1.6; }
-
-  .form-group select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%236B7280' d='M5 6L0 0h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    background-color: var(--sand);
-    padding-right: 40px;
-  }
-
-  .form-submit {
-    width: 100%; padding: 20px;
-    background: var(--green); color: var(--white);
-    border: none; cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px; font-weight: 500;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    transition: background 0.2s; margin-top: 8px;
-  }
-
-  .form-submit:active { background: var(--gmid); }
-
-  .form-promise {
-    display: flex; flex-direction: column; gap: 10px;
-    margin-top: 20px;
-  }
-
-  .promise-item {
-    display: flex; gap: 10px; align-items: center;
-    font-size: 12px; color: var(--gray);
-  }
-
-  .promise-dot {
-    width: 4px; height: 4px; border-radius: 50%;
-    background: var(--gmid); flex-shrink: 0;
-  }
-
-  .success-msg {
-    display: none; padding: 20px;
-    background: #E8F0EB;
-    border-left: 3px solid var(--green);
-    margin-top: 20px;
-  }
-
-  .success-msg.visible { display: block; }
-
-  .success-msg p {
-    font-size: 14px; color: var(--green);
-    font-weight: 500; line-height: 1.6;
-  }
-
-  /* ── FOOTER ── */
-  .footer {
-    background: var(--black);
-    padding: 48px 28px;
-  }
-
-  .footer-brand {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px; font-weight: 900;
-    color: var(--white); margin-bottom: 4px;
-  }
-
-  .footer-sub {
-    font-size: 11px; letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.3);
-    margin-bottom: 32px;
-  }
-
-  .footer-divider {
-    width: 32px; height: 1px;
-    background: rgba(255,255,255,0.15);
-    margin-bottom: 24px;
-  }
-
-  .footer-ig {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-family: 'DM Mono', monospace;
-    font-size: 12px; color: var(--glight);
-    text-decoration: none; letter-spacing: 0.08em;
-  }
-
-  .footer-copy {
-    margin-top: 32px;
-    font-size: 11px; color: rgba(255,255,255,0.2);
-  }
-
-  /* ── SOBRE ─────────────────────────────────────── */
-  .sobre {
-    background: var(--black);
-    padding: 100px 0;
-  }
-  .sobre-inner {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-  .sobre-headline {
-    font-family: var(--serif);
-    font-size: clamp(28px, 4vw, 44px);
-    color: var(--white);
-    line-height: 1.25;
-    margin: 16px 0 28px;
-  }
-  .sobre-headline em {
-    color: var(--glight);
-    font-style: italic;
-  }
-  .sobre-body {
-    font-size: 17px;
-    color: rgba(250,250,250,0.65);
-    line-height: 1.8;
-    max-width: 720px;
-    margin-bottom: 56px;
-  }
-  .sobre-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-bottom: 48px;
-  }
-  @media (max-width: 640px) {
-    .sobre-cards { grid-template-columns: 1fr; }
-  }
-  .sobre-card {
-    border: 1px solid rgba(125,184,150,0.25);
-    border-radius: 8px;
-    padding: 28px;
-    background: rgba(45,107,71,0.08);
-  }
-  .sobre-card-title {
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--glight);
-    margin-bottom: 14px;
-  }
-  .sobre-card-logos {
-    font-size: 15px;
-    color: rgba(250,250,250,0.8);
-    line-height: 1.9;
-  }
-  .sobre-pillars {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  @media (max-width: 640px) {
-    .sobre-pillars { grid-template-columns: 1fr; }
-  }
-  .sobre-pillar {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 20px;
-    border-left: 2px solid var(--green);
-    background: rgba(26,61,43,0.3);
-    border-radius: 0 6px 6px 0;
-  }
-  .sobre-pillar-icon {
-    color: var(--glight);
-    font-size: 10px;
-    margin-top: 4px;
-    flex-shrink: 0;
-  }
-  .sobre-pillar-text {
-    font-size: 15px;
-    color: rgba(250,250,250,0.75);
-    line-height: 1.6;
-  }
-
-
-  /* ── CTAs adicionados ── */
-  .hero-sub {
-    font-size: 16px; line-height: 1.6; color: rgba(250,250,250,0.85);
-    max-width: 440px; margin: 18px 0 0; font-weight: 300;
-  }
-  .hero-cta {
-    display: inline-block; align-self: flex-start; width: fit-content;
-    margin-top: 32px; padding: 15px 34px;
-    background: var(--white); color: var(--green);
-    font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500;
-    text-decoration: none; letter-spacing: 0.3px; border-radius: 2px;
-    transition: opacity .2s;
-  }
-  .hero-cta:hover { opacity: 0.9; }
-  .mid-cta-wrap { text-align: center; padding: 8px 24px 56px; background: var(--sand); }
-  .mid-cta {
-    display: inline-block; padding: 14px 30px;
-    background: var(--green); color: var(--white);
-    font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500;
-    text-decoration: none; border-radius: 2px; transition: opacity .2s;
-  }
-  .mid-cta:hover { opacity: 0.92; }
-  .whatsapp-cta {
-    display: block; text-align: center; margin-top: 14px; padding: 13px 20px;
-    border: 1px solid var(--border); color: var(--green);
-    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500;
-    text-decoration: none; border-radius: 2px; background: transparent;
-    transition: background .2s;
-  }
-  .whatsapp-cta:hover { background: var(--sand2); }
-  html { scroll-behavior: smooth; }
-
-  .metodo-cta-wrap { text-align: center; padding: 0 24px 64px; background: var(--green); }
-  .metodo-cta-wrap .mid-cta { background: var(--white); color: var(--green); }
-
-  /* ══════════ CAMADA DESKTOP (≥900px) — mobile intocado ══════════ */
-  @media (min-width: 900px) {
-    /* HERO: coluna de conteúdo constrangida e centralizada, tipografia maior */
-    .hero { padding: 56px 48px 48px; }
-    .hero-top, .hero-middle, .hero-bottom {
-      width: 100%; max-width: 1000px; margin-left: auto; margin-right: auto;
-    }
-    .hero-name { font-size: 110px; }
-    .hero-tagline { font-size: 30px; max-width: 460px; }
-    .hero-sub { font-size: 18px; max-width: 520px; }
-    .hero-cta { font-size: 18px; padding: 20px 52px; }
-    .mid-cta { font-size: 17px; padding: 18px 44px; }
-    .form-submit { font-size: 17px; padding: 20px 24px; }
-    .whatsapp-cta { font-size: 16px; padding: 16px 24px; }
-
-    /* Seções de conteúdo: container central de leitura */
-    .manifesto, .problema, .transform { padding: 88px 48px; }
-    .manifesto > *, .problema > *, .transform > * {
-      max-width: 780px; margin-left: auto; margin-right: auto;
-    }
-    .manifesto-text { font-size: 30px; }
-    .manifesto-sub { font-size: 18px; }
-    .section-title { font-size: 30px; }
-    .prob-text { font-size: 18px; }
-    .ba-before, .ba-after { font-size: 18px; }
-
-    /* Stats */
-    .stats-section { padding: 72px 48px; }
-    .stats-grid { max-width: 860px; margin: 0 auto; }
-
-    /* Metodologia */
-    .metodo { padding: 96px 48px; }
-    .metodo-header, .pillar-stack { max-width: 860px; margin-left: auto; margin-right: auto; }
-
-    /* Citação */
-    .big-quote > * { max-width: 780px; margin-left: auto; margin-right: auto; }
-
-    /* Formulário: coluna estreita de conversão */
-    .form-section { padding: 96px 48px; }
-    .form-intro { max-width: 640px; margin-left: auto; margin-right: auto; }
-    .form-card { max-width: 600px; margin-left: auto; margin-right: auto; }
-
-    /* CTAs de meio de página respiram mais */
-    .mid-cta-wrap { padding: 16px 24px 72px; }
-    .metodo-cta-wrap { padding: 0 24px 88px; }
-  }
+:root{
+  --verde:#1A3D2B; --verde2:#2E5940; --verde3:#3A5F4A; --verde4:#5C8069;
+  --verde5:#A9C9B6; --verde6:#D7E4DC; --creme:#F1ECE6; --branco:#FAFAFA;
+  --tinta:#1F2421; --cinza:#6E6A64;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'DM Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--branco);color:var(--tinta);font-family:var(--sans);
+  font-size:19px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.narrow{max-width:820px;margin:0 auto}
+section{padding:88px 0}
+@media(max-width:760px){section{padding:60px 0} body{font-size:18px}}
+
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.15;letter-spacing:-.015em}
+h1{font-size:clamp(38px,5.6vw,66px)}
+h2{font-size:clamp(30px,4vw,46px);margin-bottom:20px}
+h3{font-size:clamp(21px,2.2vw,26px);margin-bottom:10px}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--verde4);font-weight:500;margin-bottom:18px;display:block}
+.lead{font-size:clamp(19px,2.1vw,23px);color:var(--verde2);line-height:1.6}
+.muted{color:var(--cinza);font-size:16px}
+
+/* ---------- header fixo ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(250,250,250,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--verde6)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:var(--serif);font-weight:700;font-size:22px;letter-spacing:.24em;color:var(--verde)}
+.hd .btn{padding:11px 22px;font-size:15px}
+@media(max-width:620px){.hd .btn{padding:10px 16px;font-size:14px} .logo{font-size:19px;letter-spacing:.16em}}
+
+/* ---------- botoes ---------- */
+.btn{display:inline-block;background:var(--verde);color:var(--branco);font-family:var(--sans);
+  font-weight:700;font-size:18px;padding:18px 34px;border-radius:4px;text-decoration:none;
+  border:2px solid var(--verde);cursor:pointer;transition:.18s;line-height:1.3}
+.btn:hover{background:var(--verde2);border-color:var(--verde2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--verde);border-color:var(--verde)}
+.btn-ghost:hover{background:var(--verde);color:var(--branco)}
+.btn-light{background:var(--branco);color:var(--verde);border-color:var(--branco)}
+.btn-light:hover{background:var(--verde6);border-color:var(--verde6);color:var(--verde)}
+.cta-note{display:block;margin-top:14px;font-size:15px;color:var(--cinza)}
+
+/* ---------- barra de escassez ---------- */
+.scarcity{background:var(--verde);color:var(--branco);text-align:center;padding:14px 24px;
+  font-size:16px;font-weight:500;line-height:1.5}
+.scarcity b{color:var(--verde5)}
+
+/* ---------- hero ---------- */
+.hero{padding:82px 0 78px;background:linear-gradient(180deg,var(--creme) 0%,var(--branco) 100%)}
+.hero h1{margin-bottom:26px;max-width:21ch}
+.hero .lead{max-width:56ch;margin-bottom:36px}
+.hero-stats{display:flex;gap:44px;margin-top:52px;flex-wrap:wrap;
+  border-top:1px solid var(--verde6);padding-top:30px}
+.hero-stats div span{display:block;font-family:var(--serif);font-size:38px;font-weight:700;color:var(--verde);line-height:1}
+.hero-stats div small{font-size:15px;color:var(--cinza)}
+
+/* ---------- sinais ---------- */
+.sinais{display:grid;gap:0;margin:44px 0 12px;border-top:1px solid var(--verde6)}
+.sinais li{list-style:none;padding:22px 0 22px 46px;border-bottom:1px solid var(--verde6);
+  position:relative;font-size:19px}
+.sinais li::before{content:"";position:absolute;left:0;top:31px;width:26px;height:2px;background:var(--verde4)}
+
+/* ---------- cards ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:900px){.grid3,.grid4{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.grid2,.grid3,.grid4{grid-template-columns:1fr}}
+.card{background:var(--branco);border:1px solid var(--verde6);border-radius:6px;padding:30px}
+.card.creme{background:var(--creme);border-color:var(--creme)}
+.card.dark{background:var(--verde);border-color:var(--verde);color:var(--branco)}
+.card.dark h3{color:var(--branco)} .card.dark p{color:var(--verde6)}
+.card .num{font-family:var(--mono);font-size:13px;letter-spacing:.16em;color:var(--verde4);
+  font-weight:500;display:block;margin-bottom:12px}
+.card p{font-size:17px;color:var(--cinza);line-height:1.6}
+
+/* ---------- oferta ---------- */
+.oferta{background:var(--creme)}
+.semanas{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:40px 0}
+@media(max-width:820px){.semanas{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.semanas{grid-template-columns:1fr}}
+.semana{background:var(--branco);border-radius:6px;padding:26px 22px;border-top:4px solid var(--verde)}
+.semana b{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.16em;
+  color:var(--verde4);margin-bottom:10px;text-transform:uppercase}
+.semana strong{display:block;font-family:var(--serif);font-size:20px;margin-bottom:8px;color:var(--verde)}
+.semana span{font-size:16px;color:var(--cinza);line-height:1.55}
+
+.entregavel{background:var(--verde);color:var(--branco);border-radius:6px;padding:36px 38px;margin-top:8px}
+.entregavel h3{color:var(--branco);margin-bottom:12px}
+.entregavel p{color:var(--verde6);font-size:18px}
+
+.garantia{border:2px solid var(--verde);border-radius:6px;padding:30px 34px;margin-top:26px;background:var(--branco)}
+.garantia h3{color:var(--verde)}
+.garantia p{font-size:18px;color:var(--verde2);margin-top:8px}
+
+/* ---------- objecao ---------- */
+.objecao{background:var(--verde);color:var(--branco)}
+.objecao h2{color:var(--branco)}
+.objecao .lead{color:var(--verde6)}
+.objecao p{color:var(--verde6);font-size:19px}
+.objecao strong{color:var(--branco)}
+
+/* ---------- pilares ---------- */
+.pilar{display:flex;gap:24px;padding:24px 0;border-bottom:1px solid var(--verde6);align-items:flex-start}
+.pilar:last-child{border-bottom:none}
+.pilar .p-num{font-family:var(--serif);font-size:34px;font-weight:700;color:var(--verde5);
+  line-height:1;min-width:60px}
+.pilar h3{font-size:21px;margin-bottom:4px}
+.pilar p{font-size:17px;color:var(--cinza);margin:0}
+
+/* ---------- sobre ---------- */
+.sobre{background:var(--creme)}
+.marcas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.marcas span{background:var(--branco);border:1px solid var(--verde6);border-radius:4px;
+  padding:9px 15px;font-size:15px;color:var(--verde2);font-weight:500}
+
+/* ---------- faq ---------- */
+.faq details{border-bottom:1px solid var(--verde6);padding:6px 0}
+.faq summary{font-family:var(--serif);font-size:21px;font-weight:700;color:var(--verde);
+  cursor:pointer;padding:20px 40px 20px 0;position:relative;list-style:none;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:30px;
+  color:var(--verde4);font-family:var(--sans);font-weight:400;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 22px;font-size:18px;color:var(--cinza);max-width:70ch}
+
+/* ---------- form ---------- */
+.form-sec{background:var(--verde);color:var(--branco)}
+.form-sec h2{color:var(--branco)}
+.form-sec .lead{color:var(--verde6);margin-bottom:34px}
+.form-card{background:var(--branco);border-radius:8px;padding:38px}
+@media(max-width:620px){.form-card{padding:26px 22px}}
+.form-card label{display:block;font-size:15px;font-weight:700;color:var(--verde);
+  margin-bottom:7px;letter-spacing:.01em}
+.form-card input,.form-card select,.form-card textarea{width:100%;padding:15px 16px;
+  font-family:var(--sans);font-size:17px;color:var(--tinta);background:var(--branco);
+  border:1.5px solid var(--verde6);border-radius:4px;margin-bottom:20px}
+.form-card input:focus,.form-card select:focus,.form-card textarea:focus{
+  outline:none;border-color:var(--verde)}
+.form-card textarea{min-height:110px;resize:vertical}
+.form-card .btn{width:100%;text-align:center;font-size:19px}
+.form-alt{text-align:center;margin-top:24px;font-size:17px;color:var(--verde6)}
+.form-alt a{color:var(--branco);font-weight:700}
+
+/* ---------- rodape ---------- */
+footer{background:var(--verde);color:var(--verde6);padding:44px 0 40px;border-top:1px solid var(--verde3)}
+.ft{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:15px}
+footer a{color:var(--verde5);text-decoration:none}
+footer a:hover{color:var(--branco)}
+
+/* ---------- barra fixa mobile ---------- */
+.mobile-cta{display:none}
+@media(max-width:760px){
+  .mobile-cta{display:block;position:fixed;bottom:0;left:0;right:0;z-index:70;
+    background:var(--verde);padding:12px 16px;box-shadow:0 -4px 18px rgba(26,61,43,.22)}
+  .mobile-cta a{display:block;text-align:center;color:var(--branco);font-weight:700;
+    font-size:17px;text-decoration:none;padding:12px}
+  body{padding-bottom:72px}
+  header .btn{display:none}
+}
+.center{text-align:center}
+.mt40{margin-top:40px}.mt28{margin-top:28px}
 </style>
 </head>
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-lines">
-      <div class="hero-line" style="width:80px;"></div>
-      <div class="hero-line" style="width:56px;"></div>
-      <div class="hero-line" style="width:96px;"></div>
-      <div class="hero-line" style="width:40px;"></div>
-      <div class="hero-line" style="width:72px;"></div>
+<header>
+  <div class="wrap hd">
+    <span class="logo">STRATA</span>
+    <a href="#conversa" class="btn">Solicitar uma conversa</a>
+  </div>
+</header>
+
+<div class="scarcity">
+  Condição de lançamento: <b>3 vagas de Diagnóstico</b> até <b>31 de outubro de 2026</b>.
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">Consultoria estratégica 1:1 · Interior de São Paulo</span>
+    <h1>Você investe em marketing todo mês. E ainda não sabe dizer o que traz cliente.</h1>
+    <p class="lead">A Strata é uma consultoria 1:1 que transforma marketing em estrutura previsível de demanda, pipeline e receita. Você trabalha comigo diretamente — sem agência no meio e sem terceirizar a sua estratégia.</p>
+    <a href="#conversa" class="btn">Solicitar uma conversa</a>
+    <span class="cta-note">Conversa de 30 a 45 minutos, sem compromisso. Resposta em até 24h úteis.</span>
+    <div class="hero-stats">
+      <div><span>15</span><small>anos dentro de multinacionais</small></div>
+      <div><span>20+</span><small>marcas geridas</small></div>
+      <div><span>1:1</span><small>nunca em grupo, nunca terceirizado</small></div>
     </div>
+  </div>
+</section>
 
-    <div class="hero-top">
-      <div class="hero-badge">@strata.mkt</div>
-      
-    </div>
-
-    <div class="hero-middle">
-      <div class="hero-eyebrow">Consultoria Estratégica</div>
-      <div class="hero-name">STRATA</div>
-      <div class="hero-divider"></div>
-      <div class="hero-tagline">Clareza estratégica para crescimento previsível.</div>
-      <div class="hero-sub">Consultoria 1:1 para negócios B2B que querem sair do improviso e construir demanda, pipeline e receita com estrutura.</div>
-      <a href="#proposta" class="hero-cta">Solicitar uma conversa →</a>
-    </div>
-
-    <div class="hero-bottom">
-
-    </div>
-
-    <div class="hero-bg-text">S</div>
-  </section>
-
-  <!-- VOCÊ SE RECONHECE (dor-primeiro) -->
-<section class="problema">
-    <div class="section-eyebrow">Você se reconhece aqui?</div>
-    <div class="section-title">Sinais de que sua empresa precisa de clareza estratégica</div>
-    <ul class="prob-list">
-      <li class="prob-item">
-        <span class="prob-dash">—</span>
-        <span class="prob-text">Marketing executado sem direção estratégica clara</span>
-      </li>
-      <li class="prob-item">
-        <span class="prob-dash">—</span>
-        <span class="prob-text">Demanda que depende de indicação ou do fundador</span>
-      </li>
-      <li class="prob-item">
-        <span class="prob-dash">—</span>
-        <span class="prob-text">Pipeline inconsistente, sem previsibilidade</span>
-      </li>
-      <li class="prob-item">
-        <span class="prob-dash">—</span>
-        <span class="prob-text">Decisões tomadas no achismo, não em dados</span>
-      </li>
-      <li class="prob-item">
-        <span class="prob-dash">—</span>
-        <span class="prob-text">Crescimento que não escala porque não tem base</span>
-      </li>
+<!-- ============ DOR ============ -->
+<section>
+  <div class="wrap narrow">
+    <span class="kicker">Você se reconhece aqui?</span>
+    <h2>Os sinais de que falta direção, não esforço</h2>
+    <ul class="sinais">
+      <li>Você aprova posts e campanhas sem saber ao certo se eles constroem alguma coisa.</li>
+      <li>Quando o mês é bom, ninguém sabe explicar por quê. Quando é ruim, também não.</li>
+      <li>A demanda ainda depende de indicação — ou de você pessoalmente.</li>
+      <li>Você tem gente que executa, mas ninguém que diga para onde ir.</li>
+      <li>Se o marketing fosse cortado amanhã, seria difícil defender com números por que ele deveria ficar.</li>
     </ul>
-  </section>
-
-  <div class="mid-cta-wrap">
-    <a href="#proposta" class="mid-cta">Reconheceu algum sinal? Vamos conversar →</a>
+    <p class="lead mt28">Se dois desses pontos soam familiares, o problema quase nunca é fazer mais marketing. É saber para onde apontar o que já se faz.</p>
+    <p class="mt28"><a href="#conversa" class="btn">Solicitar uma conversa</a>
+    <span class="cta-note">Resposta em até 24h úteis.</span></p>
   </div>
+</section>
 
-  <!-- A TRANSFORMAÇÃO -->
-<section class="transform">
-    <div class="transform-label">A transformação</div>
-    <div class="before-after">
-      <div class="ba-row">
-        <div class="ba-before">Crescimento improvisado</div>
-        <div class="ba-arrow">→</div>
-        <div class="ba-after">Estrutura previsível</div>
+<!-- ============ OFERTA PRINCIPAL ============ -->
+<section class="oferta">
+  <div class="wrap">
+    <span class="kicker">Por onde começar</span>
+    <h2>Comece pelo Diagnóstico</h2>
+    <p class="lead" style="max-width:62ch">Um mês, quatro encontros semanais, eu e você. No fim, você sabe para quem vende, o que te diferencia e onde vale investir — com um documento na mão, não com anotações soltas.</p>
+
+    <div class="semanas">
+      <div class="semana"><b>Semana 1</b><strong>Cenário</strong><span>Onde o crescimento trava hoje, e por quê.</span></div>
+      <div class="semana"><b>Semana 2</b><strong>ICP</strong><span>Qual cliente vale a pena perseguir — e qual não.</span></div>
+      <div class="semana"><b>Semana 3</b><strong>Posicionamento</strong><span>O que te diferencia, em palavras que vendem.</span></div>
+      <div class="semana"><b>Semana 4</b><strong>Oferta</strong><span>Como o que você vende é apresentado e cobrado.</span></div>
+    </div>
+
+    <div class="entregavel">
+      <h3>Você termina com a Leitura Estratégica</h3>
+      <p>Um documento executivo com ICP, posicionamento, mensagem central e estrutura da oferta. E, na última página, a lista honesta do que ficou de fora e merece atenção. Se eu te entregar um diagnóstico que te deixa achando que está tudo certo, eu fiz mal feito.</p>
+    </div>
+
+    <div class="garantia">
+      <h3>Começar pelo menor não custa mais caro</h3>
+      <p>Se depois do Diagnóstico você quiser seguir para a Consultoria ou o Programa Anual, eu abato integralmente o valor já pago. Você não paga duas vezes por ter começado devagar.</p>
+    </div>
+
+    <p class="mt40"><a href="#conversa" class="btn">Quero começar pelo Diagnóstico</a>
+    <span class="cta-note">3 vagas em condição de lançamento até 31 de outubro.</span></p>
+  </div>
+</section>
+
+<!-- ============ OS OUTROS CAMINHOS ============ -->
+<section>
+  <div class="wrap">
+    <span class="kicker">E depois do Diagnóstico</span>
+    <h2>Dois caminhos, conforme o seu ritmo</h2>
+    <div class="grid2 mt40">
+      <div class="card">
+        <span class="num">3 meses · 12 encontros semanais</span>
+        <h3>Consultoria Estratégica</h3>
+        <p>Os cinco pilares completos, um encontro por semana. Para quem tem time que executa e quer autonomia rápido. Você termina com o Plano de Crescimento pronto para colocar em prática.</p>
       </div>
-      <div class="ba-row">
-        <div class="ba-before">Marketing sem direção</div>
-        <div class="ba-arrow">→</div>
-        <div class="ba-after">Demanda estruturada</div>
-      </div>
-      <div class="ba-row">
-        <div class="ba-before">Decisões no achismo</div>
-        <div class="ba-arrow">→</div>
-        <div class="ba-after">Clareza estratégica</div>
-      </div>
-      <div class="ba-row">
-        <div class="ba-before">Pipeline inconsistente</div>
-        <div class="ba-arrow">→</div>
-        <div class="ba-after">Receita conectada</div>
+      <div class="card">
+        <span class="num">12 meses · 15 encontros</span>
+        <h3>Programa Anual</h3>
+        <p>O primeiro mês intensivo, depois um encontro por mês revisando números e definindo o plano do período. Para quem não executa sozinho e precisa de alguém puxando o ano inteiro.</p>
       </div>
     </div>
-  </section>
+    <p class="mt40 center"><a href="#conversa" class="btn btn-ghost">Descobrir qual formato faz sentido para você</a></p>
+  </div>
+</section>
 
-  <!-- STATS -->
-<div class="stats-section">
-    <div class="stats-grid">
-      <div class="stat-box">
-        <div class="stat-num">12</div>
-        <div class="stat-label">Semanas de consultoria</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">5</div>
-        <div class="stat-label">Pilares integrados</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">1:1</div>
-        <div class="stat-label">Individual e dedicado</div>
-      </div>
+<!-- ============ OBJECAO ============ -->
+<section class="objecao">
+  <div class="wrap narrow">
+    <span class="kicker" style="color:var(--verde5)">A pergunta que todo mundo faz</span>
+    <h2>E quem vai executar?</h2>
+    <p class="lead">A Strata não executa. Não gerencia tráfego, não produz conteúdo, não implanta ferramenta.</p>
+    <p class="mt28">É justamente isso que me deixa livre para dizer o que funciona — e não o que dá mais trabalho faturável. Consultoria que também executa tem interesse na resposta.</p>
+    <p class="mt28"><strong>Mas você não sai sem resposta.</strong> Quando a necessidade é de execução, eu indico profissionais de confiança em tráfego pago e em conteúdo. Sem comissão, sem acordo comercial, sem intermediar contrato. Indicação mesmo.</p>
+  </div>
+</section>
+
+<!-- ============ METODOLOGIA ============ -->
+<section>
+  <div class="wrap narrow">
+    <span class="kicker">A metodologia</span>
+    <h2>Cinco pilares. Cada um sustenta o próximo.</h2>
+    <div class="mt40">
+      <div class="pilar"><div class="p-num">01</div><div><h3>Direção Estratégica</h3><p>ICP definido, proposta de valor clara, posicionamento no mercado.</p></div></div>
+      <div class="pilar"><div class="p-num">02</div><div><h3>Arquitetura de Demanda</h3><p>Canais prioritários, estratégia de aquisição e o papel do conteúdo.</p></div></div>
+      <div class="pilar"><div class="p-num">03</div><div><h3>Arquitetura de Receita</h3><p>Pipeline estruturado, jornada de conversão, marketing e vendas alinhados.</p></div></div>
+      <div class="pilar"><div class="p-num">04</div><div><h3>Controle &amp; Performance</h3><p>KPIs que importam e uma rotina simples de análise.</p></div></div>
+      <div class="pilar"><div class="p-num">05</div><div><h3>Planejamento &amp; Escala</h3><p>Roadmap de 90 dias, prioridades claras, crescimento sustentável.</p></div></div>
+    </div>
+    <p class="mt40"><a href="#conversa" class="btn">Solicitar uma conversa</a></p>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="sobre">
+  <div class="wrap narrow">
+    <span class="kicker">Quem conduz</span>
+    <h2>Penélope Checoli</h2>
+    <p class="lead">Quinze anos construindo marketing dentro de multinacionais — posicionamento, geração de demanda, pipeline e receita. Não é teoria de curso: é o que eu fiz por anos, e é o que eu trago agora para negócios que não têm um time de marketing inteiro à disposição.</p>
+    <div class="marcas">
+      <span>Estée Lauder</span><span>Pernod Ricard</span><span>EssilorLuxottica</span>
+      <span>Alcon</span><span>Monsanto</span><span>RedCloud Technology</span>
+    </div>
+    <p class="muted mt28">Formação e especializações: ESPM · INSPER · PM3 · G4 Educação · Digital Marketing Institute</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap narrow faq">
+    <span class="kicker">Perguntas diretas</span>
+    <h2>O que você provavelmente quer saber</h2>
+    <div class="mt40">
+      <details open>
+        <summary>Quanto custa?</summary>
+        <p>São três formatos, do mais curto ao anual. O valor depende do formato e do porte do negócio, e eu apresento na conversa — depois de entender o seu cenário, não antes. O que posso adiantar agora: o Diagnóstico está em condição de lançamento até 31 de outubro, com três vagas.</p>
+      </details>
+      <details>
+        <summary>Em quanto tempo eu vejo resultado?</summary>
+        <p>Clareza, no primeiro mês — você termina o Diagnóstico sabendo para quem vende e o que te diferencia. Resultado de receita depende da execução do seu time, e nisso eu prefiro ser honesta: não prometo prazo sobre o que não controlo.</p>
+      </details>
+      <details>
+        <summary>E se eu não tiver time de marketing?</summary>
+        <p>Existe formato para isso. O Programa Anual foi desenhado exatamente para quem não executa sozinho e precisa de alguém acompanhando mês a mês, em vez de receber um plano e ficar com ele parado.</p>
+      </details>
+      <details>
+        <summary>Funciona para o meu segmento?</summary>
+        <p>Meu foco não é um segmento específico, é um tipo de desafio. Se o seu marketing não está conectado à receita, o padrão é o mesmo em qualquer setor — e foi esse padrão que eu resolvi por quinze anos em mercados bem diferentes entre si.</p>
+      </details>
+      <details>
+        <summary>Preciso decidir alguma coisa na conversa?</summary>
+        <p>Não. A conversa dura de 30 a 45 minutos e serve para eu entender o seu cenário. Se fizer sentido, você recebe uma proposta em até 24 horas. Se não fizer, eu digo — prefiro isso a te vender algo que não vai resolver.</p>
+      </details>
+      <details>
+        <summary>A Strata é uma agência?</summary>
+        <p>Não. Agência executa; consultoria define o caminho. A Strata não gerencia campanhas, não cuida de redes sociais e não implanta ferramentas. Se você precisa de execução, eu indico quem faz bem — sem cobrar nada por isso.</p>
+      </details>
     </div>
   </div>
+</section>
 
-  <!-- O QUE É A STRATA -->
-<section class="manifesto">
-    <div class="manifesto-label">Como funciona</div>
-    <div class="manifesto-text">
-      Trabalhamos juntos no diagnóstico, no posicionamento, na geração de demanda e na conexão entre marketing e receita.
-    </div>
-    <div class="manifesto-sub">
-      Sessões 1:1, com entregáveis reais a cada encontro — você sai de cada sessão com algo construído, não só com anotações.
-    </div>
-  </section>
-
-
-  <!-- MANIFESTO -->
-    <!-- SOBRE -->
-    <!-- PROBLEMA -->
-    <!-- TRANSFORMAÇÃO -->
-    <!-- STATS -->
-    <!-- MÉTODO -->
-  <section class="metodo">
-    <div class="metodo-header">
-      <div class="section-eyebrow" style="color:var(--glight);">A metodologia</div>
-      <div class="section-title" style="color:var(--white); font-size:26px;">Como essa transformação acontece: cinco pilares construídos em sequência. Cada camada sustenta a próxima.</div>
-    </div>
-    <div class="pillar-stack">
-      <div class="pillar">
-        <div class="pillar-num">01</div>
-        <div class="pillar-content">
-          <div class="pillar-name">Direção Estratégica</div>
-          <div class="pillar-desc">ICP, proposta de valor e posicionamento definidos com clareza</div>
-        </div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">02</div>
-        <div class="pillar-content">
-          <div class="pillar-name">Arquitetura de Demanda</div>
-          <div class="pillar-desc">Canais prioritários e sistema de geração de oportunidades</div>
-        </div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">03</div>
-        <div class="pillar-content">
-          <div class="pillar-name">Arquitetura de Receita</div>
-          <div class="pillar-desc">Pipeline, conversão e integração entre marketing e vendas</div>
-        </div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">04</div>
-        <div class="pillar-content">
-          <div class="pillar-name">Controle & Performance</div>
-          <div class="pillar-desc">KPIs estratégicos e decisões orientadas por dados reais</div>
-        </div>
-      </div>
-      <div class="pillar">
-        <div class="pillar-num">05</div>
-        <div class="pillar-content">
-          <div class="pillar-name">Planejamento & Escala</div>
-          <div class="pillar-desc">Roadmap de 90 dias e estrutura de crescimento sustentável</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="metodo-cta-wrap">
-    <a href="#proposta" class="mid-cta">Pronto para construir esses pilares? Vamos conversar →</a>
-  </div>
-
-  <!-- QUEM ESTÁ POR TRÁS -->
-<section class="sobre" id="sobre">
-    <div class="sobre-inner">
-      <div class="section-eyebrow">Quem está por trás da Strata</div>
-      <div class="sobre-headline">15 anos. 5 multinacionais.<br><em>Um padrão que se repetia em todo lugar.</em></div>
-      <div class="sobre-body">
-        Profissional de marketing com 15 anos de experiência em empresas multinacionais dos setores de varejo, beleza, bens de consumo, farmacêutico e agronegócio. Especialista em construir posicionamento e estratégias de marketing para grandes empresas — com foco em marketing digital, go-to-market e growth.
-      </div>
-
-      <div class="sobre-cards">
-        <div class="sobre-card">
-          <div class="sobre-card-title">Experiência em</div>
-          <div class="sobre-card-logos">
-            RedCloud Technology&ensp;·&ensp;Alcon&ensp;·&ensp;Estée Lauder<br>
-            Pernod Ricard&ensp;·&ensp;EssilorLuxottica&ensp;·&ensp;Monsanto
-          </div>
-        </div>
-        <div class="sobre-card">
-          <div class="sobre-card-title">Marcas geridas</div>
-          <div class="sobre-card-logos">
-            Beefeater&ensp;·&ensp;Prada&ensp;·&ensp;Giorgio Armani&ensp;·&ensp;Bulgari<br>
-            Tom Ford&ensp;·&ensp;Smashbox&ensp;·&ensp;entre outras 20+
-          </div>
-        </div>
-      </div>
-
-      <div class="sobre-pillars">
-        <div class="sobre-pillar">
-          <div class="sobre-pillar-icon">◆</div>
-          <div class="sobre-pillar-text">Gestão de portfólio de marcas com crescimento anual sustentável</div>
-        </div>
-        <div class="sobre-pillar">
-          <div class="sobre-pillar-icon">◆</div>
-          <div class="sobre-pillar-text">Desenvolvimento de estratégia multicanal</div>
-        </div>
-        <div class="sobre-pillar">
-          <div class="sobre-pillar-icon">◆</div>
-          <div class="sobre-pillar-text">Digitalização de marcas e aceleração de presença digital</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- PARA QUEM -->
-  
-
-  <!-- QUOTE -->
-  <section class="big-quote">
-    <div class="big-quote-text">"A base que sustenta tudo que cresce acima."</div>
-    <div class="big-quote-line"></div>
-    <div class="big-quote-author">Strata — Consultoria Estratégica</div>
-  </section>
-
-
-  <!-- FORM -->
-  <section class="form-section" id="proposta">
-    <div class="form-intro">
-      <div class="section-eyebrow">Próximo passo</div>
-      <div class="form-intro-title">Pronto para construir uma base <em>sólida?</em></div>
-      <div class="form-intro-sub">Preencha abaixo e eu entro em contato em até 48h úteis para agendarmos uma conversa inicial — sem compromisso, para entender o momento da sua empresa e te mostrar como a Strata pode ajudar. Quanto mais contexto você trouxer, mais direta e produtiva será nossa conversa.</div>
-    </div>
+<!-- ============ FORMULARIO ============ -->
+<section class="form-sec" id="conversa">
+  <div class="wrap narrow">
+    <span class="kicker" style="color:var(--verde5)">Próximo passo</span>
+    <h2>Vamos conversar</h2>
+    <p class="lead">Preencha abaixo e eu te retorno em até 24h úteis com dois horários. A conversa é de 30 a 45 minutos, sem compromisso.</p>
 
     <form class="form-card" action="https://formspree.io/f/xdajjdoe" method="POST">
-      <div class="form-group">
-        <label>Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name">
-      </div>
-      <div class="form-group">
-        <label>Empresa</label>
-        <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa">
-      </div>
-      <div class="form-group">
-        <label>E-mail</label>
-        <input type="email" id="email" name="_replyto" placeholder="seu@empresa.com" autocomplete="email">
-      </div>
-      <div class="form-group">
-        <label>Tamanho da empresa</label>
-        <select id="tamanho" name="tamanho">
-          <option value="">Selecione</option>
-          <option>1–10 colaboradores</option>
-          <option>11–50 colaboradores</option>
-          <option>51–200 colaboradores</option>
-          <option>200+ colaboradores</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Principal desafio hoje <span style="color:var(--gray); font-weight:400;">(opcional)</span></label>
-        <textarea id="desafio" name="desafio" placeholder="Qual é o maior gargalo de crescimento da sua empresa hoje?"></textarea>
-      </div>
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
 
-      <button type="submit" class="form-submit">Solicitar uma conversa →</button>
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa" name="empresa" placeholder="Nome da empresa" required>
 
-      <a href="https://wa.me/5519981255555?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Strata%20e%20quero%20entender%20melhor%20como%20funciona%20a%20consultoria."
-         class="whatsapp-cta" target="_blank" rel="noopener" id="whatsCta">Ou, se preferir, me chama no WhatsApp →</a>
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="_replyto" placeholder="seu@empresa.com" required>
 
-      <div class="success-msg" id="successMsg">
-        <p>Recebido! Entro em contato em até 48h úteis para agendarmos nossa conversa.</p>
-      </div>
+      <label for="whatsapp">WhatsApp</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="(19) 90000-0000">
 
-      </form>
+      <label for="tamanho">Tamanho da empresa</label>
+      <select id="tamanho" name="tamanho" required>
+        <option value="">Selecione</option>
+        <option>Até 10 pessoas</option>
+        <option>De 11 a 50 pessoas</option>
+        <option>De 51 a 200 pessoas</option>
+        <option>Mais de 200 pessoas</option>
+      </select>
 
-    </div>
-  </section>
+      <label for="desafio">Qual é o maior gargalo do seu marketing hoje?</label>
+      <textarea id="desafio" name="desafio" placeholder="Escreva com as suas palavras. Quanto mais específico, melhor eu chego preparada na conversa."></textarea>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-brand">Strata</div>
-    <div class="footer-sub">Consultoria Estratégica</div>
-    <div class="footer-divider"></div>
-    <a href="https://instagram.com/strata.mkt" class="footer-ig">@strata.mkt</a>
-    <div class="footer-copy">© 2026 Strata. Todos os direitos reservados.</div>
-  </footer>
+      <button type="submit" class="btn">Solicitar uma conversa</button>
+    </form>
 
+    <p class="form-alt">Prefere e-mail? Escreva para <a id="mailCta" href="mailto:strata.mkt@gmail.com?subject=Quero%20conversar%20sobre%20a%20consultoria">strata.mkt@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap ft">
+    <div><span class="logo" style="color:var(--branco);font-size:18px">STRATA</span> &nbsp; Consultoria Estratégica</div>
+    <div><a href="https://instagram.com/strata.mkt" target="_blank" rel="noopener">@strata.mkt</a> &nbsp;·&nbsp; © 2026</div>
+  </div>
+</footer>
+
+<div class="mobile-cta"><a href="#conversa">Solicitar uma conversa →</a></div>
 
 <script>
-  (function() {
-    var form = document.querySelector('.form-card');
-    if (form) form.addEventListener('submit', function() {
-      if (typeof fbq === 'function') fbq('track', 'Lead');
-    });
-    var wa = document.getElementById('whatsCta');
-    if (wa) wa.addEventListener('click', function() {
-      if (typeof fbq === 'function') fbq('track', 'Contact');
-    });
-  })();
+  document.querySelector('.form-card').addEventListener('submit', function(){
+    if (typeof fbq === 'function') fbq('track', 'Lead');
+  });
+  var m = document.getElementById('mailCta');
+  if (m) m.addEventListener('click', function(){
+    if (typeof fbq === 'function') fbq('track', 'Contact');
+  });
 </script>
 </body>
 </html>
